@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Item Pools -->
+    <!-- shop: quality 3-4 -->
+    <!-- floor_reward: quality 2-3 -->
+    <!-- secret: any quality -->
+    <!-- event: any quality -->
+<!-- Item Pools -->
+
+<!-- Item cooldowns are measured by the room charging. If it is a timed charge, add "timed" before cooldown. I.E: timedcooldown="2.5". Timed Cooldowns are mesaured in decimals, representing the time in seconds -->
+
+<items>
+
+<item 
+    id="1"
+    name="Burnt Chilli"
+    description="Smells like my dad!"
+    type="Passive"
+    quality="4"
+    itempool="shop,secret,event"
+    image="resources/gfx/items/collectibles/collectibles_001_burntchilli.png"
+    shop_price="8"
+    bob_speed="2.0"
+    bob_height="3"
+    damage="3"
+    health="2"
+/>
+
+<item 
+    id="2"
+    name="Light Bulb"
+    description="Shine bright like a diamond! All stats up!"
+    type="Passive"
+    quality="3"
+    itempool="shop,secret,event,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_002_lightbulb.png"
+    shop_price="10"
+    bob_speed="1.8"
+    bob_height="4"
+    speed="0.5"
+    damage="0.5"
+    health="0.5"
+    sizeup="1"
+/>
+
+<item 
+    id="3"
+    name="Wet Sock"
+    description="Super Slippery!"
+    type="Passive"
+    quality="1"
+    itempool="event,secret"
+    image="resources/gfx/items/collectibles/collectibles_003_wetsock.png"
+    bob_speed="2.2"
+    bob_height="2"
+    speed="1"
+    damage="-1"
+/>
+
+<item 
+    id="4"
+    name="Dead Spider"
+    description="The webs are all over my face! RUN!"
+    type="Passive"
+    quality="0"
+    itempool="event,secret"
+    image="resources/gfx/items/collectibles/collectibles_004_deadspider.png"
+    bob_speed="1.5"
+    bob_height="5"
+    speed="0.5"
+    damage="-0.5"
+/>
+
+<item 
+    id="5"
+    name="Mysterious Key"
+    description="Opens doors to the unknown..."
+    type="Passive"
+    quality="0"
+    itempool="secret,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_005_mysteriouskey.png"
+    bob_speed="2.5"
+    bob_height="3"
+    luck="2"
+/>
+
+<item 
+    id="6"
+    name="Playdough"
+    description="Create something new!"
+    type="Active"
+    quality="?"
+    itempool="shop,secret,event"
+    image="resources/gfx/items/collectibles/collectibles_006_playdough.png"
+    shop_price="9"
+    bob_speed="1.2"
+    bob_height="6"
+    active_action="playdough_platform"
+    active_effect="Hold to create a temporary platform. Can be used in the air."
+    timedcooldown="240"
+/>
+
+<item 
+    id="7"
+    name="Playdough Shotgun"
+    description="BANG BANG BANG!"
+    type="Passive"
+    quality="4"
+    itempool="shop,secret,event"
+    image="resources/gfx/items/collectibles/collectibles_007_playdoughshotgun.png"
+    shop_price="12"
+    bob_speed="2.0"
+    bob_height="3"
+    damage="10"
+    firerate="-2.5"
+/>
+
+<item 
+    id="8"
+    name="Playdough Cake"
+    description="Yummy yummy!"
+    type="Active"
+    quality="1"
+    itempool="secret,event"
+    image="resources/gfx/items/collectibles/collectibles_008_playdoughcake.png"
+    bob_speed="1.8"
+    bob_height="4"
+    active_action="cake"
+    active_effect="Heal 1 heart and gain temporary invincibility for 5 seconds."
+    cooldown="3"
+/>
+
+<item 
+    id="9"
+    name="Playdough Shield"
+    description="Reflected!"
+    type="Passive"
+    quality="3"
+    itempool="secret,event,floor_reward,shop"
+    image="resources/gfx/items/collectibles/collectibles_009_playdoughshield.png"
+    shop_price="11"
+    bob_speed="1.5"
+    bob_height="5"
+    effect="Reflects projectiles for 5 seconds after taking damage. 20% chance to natrually block damage."
+/>
+
+<item 
+    id="10"
+    name="Burnt Compass"
+    description="Reveals and opens secret rooms on the map!"
+    type="Passive"
+    quality="2"
+    itempool="secret,event,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_010_burntcompass.png"
+    bob_speed="1.8"
+    bob_height="4"
+    effect="Reveals the layout of the current room and opens any hidden doors."
+/>
+
+<item 
+    id="11"
+    name="Charred Key"
+    description="I could've found this on my own.."
+    type="Passive"
+    quality="0"
+    itempool="secret,event"
+    image="resources/gfx/items/collectibles/collectibles_011_charredkey.png"
+    bob_speed="2.4"
+    bob_height="3"
+    effect="+2 Keys"
+/>
+
+<item 
+    id="12"
+    name="Molotov"
+    description="Burn the world!"
+    type="Active"
+    quality="2"
+    itempool="secret,event,shop"
+    image="resources/gfx/items/collectibles/collectibles_012_molotov.png"
+    shop_price="10"
+    bob_speed="2.3"
+    bob_height="2"
+    active_action="molotov"
+    active_effect="Throw a molotov that creates a temporary fire on the ground, damaging enemies that walk over it."
+    timedcooldown="45"
+/>
+
+<item 
+    id="13"
+    name="Charger"
+    description="Whip energy into your foes!"
+    type="Active"
+    quality="2"
+    itempool="secret,event"
+    image="resources/gfx/items/collectibles/collectibles_013_charger.png"
+    bob_speed="2.0"
+    bob_height="3"
+    active_action="charger"
+    active_effect="Electrocute enemies for 50% of their health while doing leaving you with half a heart of health. Kills user if you have less than half a heart of health."
+    timedcooldown="45"
+/>
+
+<item 
+    id="14"
+    name="Duality"
+    description="Whats this do?"
+    type="Active"
+    quality="2"
+    itempool="secret,event,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_014_duality.png"
+    bob_speed="1.9"
+    bob_height="4"
+    active_action="duality"
+    active_effect="Reroll all of your current stats and passive items within their respective item pool. If you have no passive items, gain a random floor reward item instead."
+    cooldown="5"
+/>
+
+<item 
+    id="15"
+    name="Garlic"
+    description="Bad breath is the best defense!"
+    type="Passive"
+    quality="2"
+    itempool="secret,event"
+    image="resources/gfx/items/collectibles/collectibles_015_garlic.png"
+    bob_speed="2.1"
+    bob_height="3"
+    effect="Breathe on enemies and posion them for 5 seconds, dealing rapid tick damage which concludes to 5 damage per second."
+/>
+
+<item 
+    id="16"
+    name="Snowman"
+    description="Why is this thing still here? It doesn't even make sense!"
+    type="Active"
+    quality="1"
+    itempool="secret,event,"
+    image="resources/gfx/items/collectibles/collectibles_016_snowman.png"
+    bob_speed="1.6"
+    bob_height="4"
+    active_action="snowman"
+    active_effect="When taking damage, create a snowman familiar that shoots weak snowballs for 5 seconds."
+    cooldown="5"
+/>
+
+<item 
+    id="17"
+    name="Utensils"
+    description="Time to eat!"
+    type="Passive"
+    quality="3"
+    itempool="secret,event,floor_reward,shop"
+    image="resources/gfx/items/collectibles/collectibles_017_utensils.png"
+    shop_price="9"
+    bob_speed="2.0"
+    bob_height="3"
+    effect="Upon killing an enemy, there is a 20% chance to drop a random heart pickup. If you have full health, there is a 50% chance to drop a random heart or pocket item instead. (I.E Toxic Heart, Candy, etc.)"
+/>
+
+<item 
+    id="18"
+    name="Kitchen Knife"
+    description="Ima stab u! >:D"
+    type="Passive"
+    quality="3"
+    itempool="secret,event,floor_reward,shop"
+    image="resources/gfx/items/collectibles/collectibles_018_kitchenknife.png"
+    shop_price="11"
+    bob_speed="2.0"
+    bob_height="3"
+    effect="When firing tears, there is a 20% chance to shoot a knife tear that does 3 damage and has a high chance to cause bleeding, dealing 1 damage per second for 5 seconds."
+/>
+
+<item 
+    id="19"
+    name="Cultist Oath"
+    description="I pledge myself to the cult!"
+    type="Active"
+    quality="2"
+    itempool="cultistdeal"
+    image="resources/gfx/items/collectibles/collectibles_019_cultistoath.png"
+    bob_speed="1.7"
+    bob_height="4"
+    active_action="cultist_oath"
+    active_effect="Upon using the item, deal mass damage to all monsters in the room, but lose 1 heart of health. If you have less than 1 heart of health, you will have no hearts available (die in one hit) for the rest of the current floor."
+    cooldown="5"
+/>
+
+<item 
+    id="20"
+    name="Scythe"
+    description="SWING SWING! Hahaha!"
+    type="Passive"
+    quality="2"
+    itempool="cultistdeal"
+    image="resources/gfx/items/collectibles/collectibles_020_scythe.png"
+    bob_speed="1.9"
+    bob_height="3"
+    effect="Split monsters in half. These halves will have half the health of the original enemy and will be 50% slower. This item does not work on bosses or mini-bosses."
+/>
+
+<item 
+    id="21"
+    name="Bread"
+    description="PRAYING this slice aint stale😭🙏"
+    type="Active"
+    quality="2"
+    itempool="secret,event,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_021_bread.png"
+    bob_speed="1.6"
+    bob_height="5"
+    active_action="bread"
+    active_effect="50% chance to fully heal yourself and gain temporary invincibility for 5 seconds. 50% chance to lose 1 heart of health. If you have less than 1 heart of health, you will have no hearts available (die in one hit) for the rest of the current floor."
+    cooldown="5"
+/>
+
+<item 
+    id="22"
+    name="Chicken Leg"
+    description="Chicken wing, chicken wing, hot dog and baloney!"
+    type="Passive"
+    quality="2"
+    itempool="secret,event,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_022_chickenleg.png"
+    bob_speed="2.1"
+    bob_height="3"
+    effect="Heal matthew 1 heart and gain a 0.3 speed boost for the rest of the floor. If you have full health, gain 1 heart container instead."
+/>
+
+<item 
+    id="23"
+    name="Fire Extinguisher"
+    description="THE FOAM IS IN MY MOUTH!"
+    type="Passive"
+    quality="4"
+    itempool="secret,event,shop"
+    image="resources/gfx/items/collectibles/collectibles_023_fireextinguisher.png"
+    shop_price="13"
+    bob_speed="1.4"
+    bob_height="5"
+    effect="Replace Matthew's tears with a continuous stream of foam that does 15x Matthew's damage per second and has a high chance to cause the wet status effect, slowing monsters by 50% for 5 seconds."
+    damage="2"
+    health="-1"
+/>
+
+<item 
+    id="24"
+    name="Mallet"
+    description="Smash smash smash! Ouch!"
+    type="Active"
+    quality="2"
+    itempool="secret,event,floor_reward"
+    image="resources/gfx/items/collectibles/collectibles_024_mallet.png"
+    bob_speed="1.8"
+    bob_height="4"
+    active_action="mallet"
+    active_effect="25% chance to do 25% of your damage to all monsters in the room. 75% chance to do leave you with half a heart. If you have less than half a heart of health, you will have no hearts available (die in one hit) for the rest of the current floor. Chance for sucessful hits scale with luck."
+    cooldown="5"
+/>
+
+<item 
+    id="25"
+    name="Monocle"
+    description="Mm... fancy!"
+    type="Passive"
+    quality="1"
+    itempool="secret,event,"
+    image="resources/gfx/items/collectibles/collectibles_025_monocle.png"
+    bob_speed="2.2"
+    bob_height="3"
+    effect="10% chance to reflect block damage from an attack. Chance to block scales with luck."
+/>
+</items>
